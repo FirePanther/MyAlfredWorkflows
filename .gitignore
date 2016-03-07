@@ -1,0 +1,20 @@
+*
+!.gitignore
+!README.md
+!workflows.php
+!"- App Hotkeys - - FirePanther/"
+!"- Clipboard Hotkeys - - FirePanther/"
+!"- Other Hotkeys - - FirePanther/"
+!"CPU - FirePanther/"
+!"Downloads - FirePanther/"
+!"Force Empty Trash - FirePanther/"
+!"FPSearch - FirePanther/"
+!"IP Details - FirePanther/"
+!"jQuery - FirePanther/"
+!"Maps - FirePanther/"
+!"Miscs - FirePanther/"
+!"Password Generator - FirePanther/"
+!"PHP Master - FirePanther/"
+!"Terminal - FirePanther/"
+!"Wiktionary - FirePanther/"
+!zzz-includes-zzz/
