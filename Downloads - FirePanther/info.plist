@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>A10F711E-4562-4988-8205-77E555679788</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F525988E-4ED1-4E45-8CAD-25BAF510025C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>FirePanther</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Downloads</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>dl</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Bitte warten...</string>
+				<key>script</key>
+				<string># modified version of @vitor's http://www.packal.org/workflow/recentdownloads
+
+IFS=$'\n'
+
+files=$(ls -dtc ${HOME}/Downloads/*/* | grep -i ".*{query}.*" | perl -MHTML::Entities -CS -pe'$_ = encode_entities($_, q{&amp;&lt;&gt;"'\''})')
+
+echo "&lt;?xml version='1.0'?&gt;&lt;items&gt;"
+for file in ${files}; do
+	echo "&lt;item uuid='file' arg='${file}' type='file'&gt;"
+	echo "&lt;title&gt;$(basename ${file})&lt;/title&gt;"
+	echo "&lt;subtitle&gt;${file}&lt;/subtitle&gt;"
+	echo "&lt;icon type='fileicon'&gt;${file}&lt;/icon&gt;"
+	echo "&lt;/item&gt;"
+done
+echo "&lt;/items&gt;"
+fi</string>
+				<key>title</key>
+				<string>Downloads</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A10F711E-4562-4988-8205-77E555679788</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict/>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>F525988E-4ED1-4E45-8CAD-25BAF510025C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>A10F711E-4562-4988-8205-77E555679788</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>F525988E-4ED1-4E45-8CAD-25BAF510025C</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

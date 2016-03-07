@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>9FC5CC7C-8D96-4DC0-8B27-2BBCB75EF709</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7C82C0DC-C5F6-4306-912C-595FD61A09F4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>DAA3CABB-8F52-4031-A1BF-880A2F37F324</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7E9F45F3-8D7F-472C-ACA0-348C509938A9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>FA704997-C876-409A-9444-2E6ACDA9AE85</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DAA3CABB-8F52-4031-A1BF-880A2F37F324</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>PHP Dokumentation aktualisieren</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>218801FB-D5AF-48AA-8AD0-89C610D0BD35</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>FirePanther</string>
+	<key>description</key>
+	<string>Test php codes or check the manual</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>PHP Master</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>7C82C0DC-C5F6-4306-912C-595FD61A09F4</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>100</integer>
+				<key>keyword</key>
+				<string>&lt;?</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>script</key>
+				<string>$errorlog = false;
+require '../workflows.php';
+
+$q = $q_backup = "{query}";
+if (!preg_match('~;\s*$~', $q)) $q .= ';';
+
+if (stripos($q, 'return ') !== false)
+	$c = @eval($q);
+else
+	$c = @eval('return '.$q);
+
+$multiline = strpos($c, "\n") !== false;
+
+if (is_array($c)) {
+	add(print_r($c, 1), print_r($c, 1), ($multiline ? "Mehrzeilig - " : "").$q_backup, 'php.png');
+} else {
+	add($c, $c, ($multiline ? "Mehrzeilig - " : "").$q_backup, 'php.png');
+}
+show();</string>
+				<key>title</key>
+				<string>PHP Tester</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9FC5CC7C-8D96-4DC0-8B27-2BBCB75EF709</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>include '../workflows.php';
+$q = "{query}";
+include 'update.php';</string>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DAA3CABB-8F52-4031-A1BF-880A2F37F324</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>keyword</key>
+				<string>php</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Lädt...</string>
+				<key>script</key>
+				<string>require '../workflows.php';
+$q = "{query}";
+include 'main.php';</string>
+				<key>title</key>
+				<string>PHP Manual</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FA704997-C876-409A-9444-2E6ACDA9AE85</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>7E9F45F3-8D7F-472C-ACA0-348C509938A9</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>http://php.net/manual/en/{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>218801FB-D5AF-48AA-8AD0-89C610D0BD35</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>218801FB-D5AF-48AA-8AD0-89C610D0BD35</key>
+		<dict>
+			<key>ypos</key>
+			<real>280</real>
+		</dict>
+		<key>7C82C0DC-C5F6-4306-912C-595FD61A09F4</key>
+		<dict>
+			<key>ypos</key>
+			<real>20</real>
+		</dict>
+		<key>7E9F45F3-8D7F-472C-ACA0-348C509938A9</key>
+		<dict>
+			<key>ypos</key>
+			<real>160</real>
+		</dict>
+		<key>9FC5CC7C-8D96-4DC0-8B27-2BBCB75EF709</key>
+		<dict>
+			<key>ypos</key>
+			<real>20</real>
+		</dict>
+		<key>DAA3CABB-8F52-4031-A1BF-880A2F37F324</key>
+		<dict>
+			<key>ypos</key>
+			<real>160</real>
+		</dict>
+		<key>FA704997-C876-409A-9444-2E6ACDA9AE85</key>
+		<dict>
+			<key>ypos</key>
+			<real>160</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://firepanther.pro</string>
+</dict>
+</plist>

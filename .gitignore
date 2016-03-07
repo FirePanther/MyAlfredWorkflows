@@ -2,19 +2,33 @@
 !.gitignore
 !README.md
 !workflows.php
-!"- App Hotkeys - - FirePanther/"
-!"- Clipboard Hotkeys - - FirePanther/"
-!"- Other Hotkeys - - FirePanther/"
-!"CPU - FirePanther/"
-!"Downloads - FirePanther/"
-!"Force Empty Trash - FirePanther/"
-!"FPSearch - FirePanther/"
-!"IP Details - FirePanther/"
-!"jQuery - FirePanther/"
-!"Maps - FirePanther/"
-!"Miscs - FirePanther/"
-!"Password Generator - FirePanther/"
-!"PHP Master - FirePanther/"
-!"Terminal - FirePanther/"
-!"Wiktionary - FirePanther/"
-!zzz-includes-zzz/
+!- App Hotkeys - - FirePanther/
+!- App Hotkeys - - FirePanther/*
+!- Clipboard Hotkeys - - FirePanther/
+!- Clipboard Hotkeys - - FirePanther/*
+!- Other Hotkeys - - FirePanther/
+!- Other Hotkeys - - FirePanther/*
+!CPU - FirePanther/
+!CPU - FirePanther/*
+!Downloads - FirePanther/
+!Downloads - FirePanther/*
+!Force Empty Trash - FirePanther/
+!Force Empty Trash - FirePanther/*
+!FPSearch - FirePanther/
+!FPSearch - FirePanther/*
+!IP Details - FirePanther/
+!IP Details - FirePanther/*
+!jQuery - FirePanther/
+!jQuery - FirePanther/*
+!Maps - FirePanther/
+!Maps - FirePanther/*
+!Miscs - FirePanther/
+!Miscs - FirePanther/*
+!Password Generator - FirePanther/
+!Password Generator - FirePanther/*
+!PHP Master - FirePanther/
+!PHP Master - FirePanther/*
+!Terminal - FirePanther/
+!Terminal - FirePanther/*
+!Wiktionary - FirePanther/
+!Wiktionary - FirePanther/*
