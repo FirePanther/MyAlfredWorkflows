@@ -1,2 +1,5 @@
-Just some selfmade Alfred workflows, not completely published (because the source code isn’t pretty clean yet).
-Maybe I will clean it up for the public, for now it’s just a backup for me.
+Just some selfmade Alfred workflows.
+
+The source isn't pretty clean, maybe I'll clean it up later for the public.
+
+For now it’s just a backup for me.
