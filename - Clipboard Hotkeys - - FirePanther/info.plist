@@ -442,7 +442,7 @@ if (!empty($cb)) {
 $file = $_SERVER["HOME"]."/Dropbox/Configs/AlfredApp/clipboard-cache/".$nr;
 if (file_exists($file)) {
 	$cb = file_get_contents($file);
-	$cb = str_replace('\\', '\\\\', $cb);
+	//$cb = str_replace('\\', '\\\\', $cb);
 	$cb = str_replace('"', '\\"', $cb);
 	$cb = str_replace("'", "'\\''", $cb);
 	echo $cb;
