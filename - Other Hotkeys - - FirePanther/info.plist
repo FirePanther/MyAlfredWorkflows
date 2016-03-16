@@ -19,11 +19,44 @@
 		</array>
 		<key>30B5B72C-4994-466E-BA41-7E0406010B26</key>
 		<array/>
+		<key>33B12E74-5C11-4499-A739-A01A2CE7D063</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F9C4CC51-5774-40C6-A140-38703EEE7F28</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>40D13EA3-B689-4E25-A27D-03011190A82D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>7DB5E1A2-0ADD-4F58-9ED4-F6630E2C07F0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>9929BD6C-1636-46F3-B916-58888377FAC6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F9C4CC51-5774-40C6-A140-38703EEE7F28</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>B686C0CF-E007-427B-BCED-79CA12E0ACDB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F9C4CC51-5774-40C6-A140-38703EEE7F28</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -149,6 +182,23 @@ include 'newFile.php';</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Launchpad.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>7DB5E1A2-0ADD-4F58-9ED4-F6630E2C07F0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -176,19 +226,110 @@ include 'newFile.php';</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Launchpad.app</string>
-				</array>
-				<key>toggle</key>
+				<key>concurrently</key>
 				<false/>
+				<key>escaping</key>
+				<integer>100</integer>
+				<key>script</key>
+				<string>include '../workflows.php';
+$q = "{query}";
+include 'launch.php';</string>
+				<key>type</key>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>7DB5E1A2-0ADD-4F58-9ED4-F6630E2C07F0</string>
+			<string>F9C4CC51-5774-40C6-A140-38703EEE7F28</string>
 			<key>version</key>
 			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>fPixelmator</string>
+				<key>hotkey</key>
+				<integer>35</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>P</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>9929BD6C-1636-46F3-B916-58888377FAC6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>dTerminal</string>
+				<key>hotkey</key>
+				<integer>17</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>B686C0CF-E007-427B-BCED-79CA12E0ACDB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>fCodeRunner</string>
+				<key>hotkey</key>
+				<integer>50</integer>
+				<key>hotmod</key>
+				<integer>262144</integer>
+				<key>hotstring</key>
+				<string>&lt;</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>33B12E74-5C11-4499-A739-A01A2CE7D063</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -205,6 +346,11 @@ include 'newFile.php';</string>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
+		<key>33B12E74-5C11-4499-A739-A01A2CE7D063</key>
+		<dict>
+			<key>ypos</key>
+			<real>610</real>
+		</dict>
 		<key>40D13EA3-B689-4E25-A27D-03011190A82D</key>
 		<dict>
 			<key>ypos</key>
@@ -215,10 +361,25 @@ include 'newFile.php';</string>
 			<key>ypos</key>
 			<real>250</real>
 		</dict>
+		<key>9929BD6C-1636-46F3-B916-58888377FAC6</key>
+		<dict>
+			<key>ypos</key>
+			<real>370</real>
+		</dict>
+		<key>B686C0CF-E007-427B-BCED-79CA12E0ACDB</key>
+		<dict>
+			<key>ypos</key>
+			<real>490</real>
+		</dict>
 		<key>E405289F-06AB-4BCD-8A05-5BF7183C8FB0</key>
 		<dict>
 			<key>ypos</key>
 			<real>130</real>
+		</dict>
+		<key>F9C4CC51-5774-40C6-A140-38703EEE7F28</key>
+		<dict>
+			<key>ypos</key>
+			<real>370</real>
 		</dict>
 		<key>FEFDBA4A-D319-43DA-9A22-E5837A974249</key>
 		<dict>

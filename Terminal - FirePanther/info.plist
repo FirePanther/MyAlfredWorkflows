@@ -27,17 +27,6 @@
 				<string></string>
 			</dict>
 		</array>
-		<key>D383DB63-A45F-4F66-9E08-D6EE1CF6B9C8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F9751D11-A334-40F7-9220-69B32EA1E1C6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
 		<key>F9751D11-A334-40F7-9220-69B32EA1E1C6</key>
 		<array>
 			<dict>
@@ -188,33 +177,6 @@ include 'run.php';</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>hotkey</key>
-				<integer>17</integer>
-				<key>hotmod</key>
-				<integer>393216</integer>
-				<key>hotstring</key>
-				<string>T</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>D383DB63-A45F-4F66-9E08-D6EE1CF6B9C8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -234,11 +196,6 @@ include 'run.php';</string>
 		<dict>
 			<key>ypos</key>
 			<real>130</real>
-		</dict>
-		<key>D383DB63-A45F-4F66-9E08-D6EE1CF6B9C8</key>
-		<dict>
-			<key>ypos</key>
-			<real>250</real>
 		</dict>
 		<key>F9751D11-A334-40F7-9220-69B32EA1E1C6</key>
 		<dict>
