@@ -6,6 +6,17 @@
 	<string>pro.firepanther.clipboardHotkeys</string>
 	<key>connections</key>
 	<dict>
+		<key>03E6ABB0-EFA6-443C-98C7-DDDD40542B72</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7CFA0D1B-BEA1-4C23-8E2E-2BC522B9FC80</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>1482F2F0-D433-4C50-9874-B1F1316F2426</key>
 		<array>
 			<dict>
@@ -18,6 +29,28 @@
 			</dict>
 		</array>
 		<key>22138D2D-7AC9-42A3-84C5-AE3571E5C2DA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7CFA0D1B-BEA1-4C23-8E2E-2BC522B9FC80</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>26281A78-7583-4486-A2D1-7DBE300CB9A1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5A20799F-7ACE-4E4C-86BE-753F41A4E17F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>2ACC42CD-FBC0-40FA-B78A-8C4BA5537FA0</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -61,6 +94,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>41A1D7AF-3F87-46A0-BA54-6D5CB5635BDB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5A20799F-7ACE-4E4C-86BE-753F41A4E17F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>4B79F6B3-BC8A-43D4-B5BC-DFD89A4DA461</key>
 		<array>
 			<dict>
@@ -72,11 +116,44 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>59377591-FFA6-4278-92C8-9770FFF041E8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7CFA0D1B-BEA1-4C23-8E2E-2BC522B9FC80</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>5A20799F-7ACE-4E4C-86BE-753F41A4E17F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>5A345AE8-FADF-4C41-B93E-85400B459FD5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>63B2246F-82FD-4C49-86BC-EC1710DBB4A2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5A20799F-7ACE-4E4C-86BE-753F41A4E17F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>69EC1907-E9A0-41C5-AC92-64D204553F3D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7CFA0D1B-BEA1-4C23-8E2E-2BC522B9FC80</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -117,6 +194,17 @@
 			</dict>
 		</array>
 		<key>834744F2-B3CC-4573-8D7C-AB04EB798BC3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5A20799F-7ACE-4E4C-86BE-753F41A4E17F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>86F1D357-B974-4E6E-A9CF-780CC880D0E0</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -277,6 +365,34 @@ echo $msg;</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>100</integer>
+				<key>script</key>
+				<string>$nr = substr("{query}", 0, 1);
+$cb = substr("{query}", 1);
+if (!empty($cb)) {
+	// copy
+	$file = $_SERVER["HOME"]."/Dropbox/Configs/AlfredApp/clipboard-cache/".$nr;
+	file_put_contents($file, $cb);
+	echo $cb;
+	exec('afplay /System/Library/Sounds/Bottle.aiff &gt; /dev/null 2&gt;&amp;1 &amp;');
+	exec('ssh root@firephone "pbcopy \$(echo \"'.base64_encode($cb).'\" | base64 -d) &amp;&amp; play /firephone/sounds/Bottle.aiff"');
+}</string>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5A20799F-7ACE-4E4C-86BE-753F41A4E17F</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -306,26 +422,6 @@ echo $msg;</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>set the clipboard to "{query}"
-tell application "System Events" to keystroke "v" using {command down}</string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.script</string>
-			<key>uid</key>
-			<string>4774865D-AA0F-4213-8346-B01393492D7F</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -351,54 +447,6 @@ tell application "System Events" to keystroke "v" using {command down}</string>
 			<string>3A955A02-9F75-4F44-944F-CA0E4525DD23</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>100</integer>
-				<key>script</key>
-				<string>$nr = substr("{query}", 0, 1);
-$cb = substr("{query}", 1);
-if (!empty($cb)) {
-	// copy
-	$file = $_SERVER["HOME"]."/Dropbox/Configs/AlfredApp/clipboard-cache/".$nr;
-	file_put_contents($file, $cb);
-	echo $cb;
-	exec('afplay /System/Library/Sounds/Bottle.aiff &gt; /dev/null 2&gt;&amp;1 &amp;');
-	exec('ssh root@firephone "pbcopy \$(echo \"'.base64_encode($cb).'\" | base64 -d) &amp;&amp; play /firephone/sounds/Bottle.aiff"');
-}</string>
-				<key>type</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5A20799F-7ACE-4E4C-86BE-753F41A4E17F</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>set the clipboard to "{query}"
-</string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.script</string>
-			<key>uid</key>
-			<string>5A345AE8-FADF-4C41-B93E-85400B459FD5</string>
-			<key>version</key>
-			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -435,25 +483,121 @@ if (!empty($cb)) {
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>68</integer>
 				<key>script</key>
-				<string>$nr = "{query}";
-// paste
-$file = $_SERVER["HOME"]."/Dropbox/Configs/AlfredApp/clipboard-cache/".$nr;
-if (file_exists($file)) {
-	$cb = file_get_contents($file);
-	//$cb = str_replace('\\', '\\\\', $cb);
-	$cb = str_replace('"', '\\"', $cb);
-	$cb = str_replace("'", "'\\''", $cb);
-	echo $cb;
-}</string>
+				<string>set the clipboard to "{query}"
+tell application "System Events" to keystroke "v" using {command down}</string>
 				<key>type</key>
-				<integer>1</integer>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.script</string>
 			<key>uid</key>
-			<string>7CFA0D1B-BEA1-4C23-8E2E-2BC522B9FC80</string>
+			<string>4774865D-AA0F-4213-8346-B01393492D7F</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>1</string>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>triggerid</key>
+				<string>Copy 1</string>
+				<key>triggername</key>
+				<string>Copy 1</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>41A1D7AF-3F87-46A0-BA54-6D5CB5635BDB</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>2</string>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>triggerid</key>
+				<string>Copy 2</string>
+				<key>triggername</key>
+				<string>Copy 2</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>86F1D357-B974-4E6E-A9CF-780CC880D0E0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>set the clipboard to "{query}"
+</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.script</string>
+			<key>uid</key>
+			<string>5A345AE8-FADF-4C41-B93E-85400B459FD5</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>3</string>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>triggerid</key>
+				<string>Copy 3</string>
+				<key>triggername</key>
+				<string>Copy 3</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>63B2246F-82FD-4C49-86BC-EC1710DBB4A2</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>4</string>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>triggerid</key>
+				<string>Copy 4</string>
+				<key>triggername</key>
+				<string>Copy 4</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>26281A78-7583-4486-A2D1-7DBE300CB9A1</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -485,6 +629,34 @@ if (file_exists($file)) {
 			<string>3B2DC03A-0DD6-4676-913D-0C3BC2C4D16C</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>$nr = "{query}";
+// paste
+$file = $_SERVER["HOME"]."/Dropbox/Configs/AlfredApp/clipboard-cache/".$nr;
+if (file_exists($file)) {
+	$cb = file_get_contents($file);
+	//$cb = str_replace('\\', '\\\\', $cb);
+	$cb = str_replace('"', '\\"', $cb);
+	$cb = str_replace("'", "'\\''", $cb);
+	echo $cb;
+}</string>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7CFA0D1B-BEA1-4C23-8E2E-2BC522B9FC80</string>
+			<key>version</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -573,17 +745,116 @@ if (file_exists($file)) {
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>1</string>
+				<key>argumenttype</key>
+				<integer>3</integer>
+				<key>triggerid</key>
+				<string>Paste 1</string>
+				<key>triggername</key>
+				<string>Paste 1</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>69EC1907-E9A0-41C5-AC92-64D204553F3D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>2</string>
+				<key>argumenttype</key>
+				<integer>3</integer>
+				<key>triggerid</key>
+				<string>Paste 2</string>
+				<key>triggername</key>
+				<string>Paste 2</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>03E6ABB0-EFA6-443C-98C7-DDDD40542B72</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>3</string>
+				<key>argumenttype</key>
+				<integer>3</integer>
+				<key>triggerid</key>
+				<string>Paste 3</string>
+				<key>triggername</key>
+				<string>Paste 3</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>2ACC42CD-FBC0-40FA-B78A-8C4BA5537FA0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>4</string>
+				<key>argumenttype</key>
+				<integer>3</integer>
+				<key>triggerid</key>
+				<string>Paste 4</string>
+				<key>triggername</key>
+				<string>Paste 4</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>59377591-FFA6-4278-92C8-9770FFF041E8</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>03E6ABB0-EFA6-443C-98C7-DDDD40542B72</key>
+		<dict>
+			<key>ypos</key>
+			<real>1010</real>
+		</dict>
 		<key>1482F2F0-D433-4C50-9874-B1F1316F2426</key>
 		<dict>
 			<key>ypos</key>
 			<real>70</real>
 		</dict>
 		<key>22138D2D-7AC9-42A3-84C5-AE3571E5C2DA</key>
+		<dict>
+			<key>ypos</key>
+			<real>850</real>
+		</dict>
+		<key>26281A78-7583-4486-A2D1-7DBE300CB9A1</key>
+		<dict>
+			<key>ypos</key>
+			<real>600</real>
+		</dict>
+		<key>2ACC42CD-FBC0-40FA-B78A-8C4BA5537FA0</key>
 		<dict>
 			<key>ypos</key>
 			<real>1050</real>
@@ -596,12 +867,17 @@ if (file_exists($file)) {
 		<key>3A955A02-9F75-4F44-944F-CA0E4525DD23</key>
 		<dict>
 			<key>ypos</key>
-			<real>450</real>
+			<real>330</real>
 		</dict>
 		<key>3B2DC03A-0DD6-4676-913D-0C3BC2C4D16C</key>
 		<dict>
 			<key>ypos</key>
-			<real>750</real>
+			<real>730</real>
+		</dict>
+		<key>41A1D7AF-3F87-46A0-BA54-6D5CB5635BDB</key>
+		<dict>
+			<key>ypos</key>
+			<real>480</real>
 		</dict>
 		<key>4774865D-AA0F-4213-8346-B01393492D7F</key>
 		<dict>
@@ -611,22 +887,37 @@ if (file_exists($file)) {
 		<key>4B79F6B3-BC8A-43D4-B5BC-DFD89A4DA461</key>
 		<dict>
 			<key>ypos</key>
-			<real>550</real>
+			<real>370</real>
+		</dict>
+		<key>59377591-FFA6-4278-92C8-9770FFF041E8</key>
+		<dict>
+			<key>ypos</key>
+			<real>1090</real>
 		</dict>
 		<key>5A20799F-7ACE-4E4C-86BE-753F41A4E17F</key>
 		<dict>
 			<key>ypos</key>
-			<real>530</real>
+			<real>250</real>
 		</dict>
 		<key>5A345AE8-FADF-4C41-B93E-85400B459FD5</key>
 		<dict>
 			<key>ypos</key>
 			<real>530</real>
 		</dict>
+		<key>63B2246F-82FD-4C49-86BC-EC1710DBB4A2</key>
+		<dict>
+			<key>ypos</key>
+			<real>560</real>
+		</dict>
+		<key>69EC1907-E9A0-41C5-AC92-64D204553F3D</key>
+		<dict>
+			<key>ypos</key>
+			<real>970</real>
+		</dict>
 		<key>7CFA0D1B-BEA1-4C23-8E2E-2BC522B9FC80</key>
 		<dict>
 			<key>ypos</key>
-			<real>750</real>
+			<real>730</real>
 		</dict>
 		<key>7D55C218-3307-42D9-BE99-B56F380F960B</key>
 		<dict>
@@ -636,12 +927,17 @@ if (file_exists($file)) {
 		<key>820507C7-C2D8-4303-9DA3-B866AF9A7D03</key>
 		<dict>
 			<key>ypos</key>
-			<real>850</real>
+			<real>770</real>
 		</dict>
 		<key>834744F2-B3CC-4573-8D7C-AB04EB798BC3</key>
 		<dict>
 			<key>ypos</key>
-			<real>350</real>
+			<real>290</real>
+		</dict>
+		<key>86F1D357-B974-4E6E-A9CF-780CC880D0E0</key>
+		<dict>
+			<key>ypos</key>
+			<real>520</real>
 		</dict>
 		<key>A818717D-7244-40E5-84DD-B19B44B07D47</key>
 		<dict>
@@ -651,7 +947,7 @@ if (file_exists($file)) {
 		<key>EAA62D75-5AA1-4B45-B1FE-F64B7E9F6B3E</key>
 		<dict>
 			<key>ypos</key>
-			<real>950</real>
+			<real>810</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
