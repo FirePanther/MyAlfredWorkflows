@@ -17,6 +17,8 @@
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
 				<string>In Terminal ausführen</string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -25,6 +27,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>F9751D11-A334-40F7-9220-69B32EA1E1C6</key>
@@ -36,6 +40,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>FB5ABBB6-7029-4E2A-A3AA-85EA015748EB</key>
@@ -47,6 +53,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -63,6 +71,8 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -83,6 +93,12 @@
 				<string>include '../workflows.php';
 $q = ltrim("{query}");
 include 'main.php';</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
 				<key>title</key>
 				<string>Terminal öffnen</string>
 				<key>type</key>
@@ -95,7 +111,7 @@ include 'main.php';</string>
 			<key>uid</key>
 			<string>0CB1DAC5-977B-4585-ACBC-265FDF0C223A</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -108,6 +124,10 @@ include 'main.php';</string>
 				<string>include '../workflows.php';
 $q = "{query}";
 include 'terminal.php';</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>1</integer>
 			</dict>
@@ -116,7 +136,7 @@ include 'terminal.php';</string>
 			<key>uid</key>
 			<string>2204E95F-F818-48D9-A420-E2F2B1EFA147</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -129,6 +149,10 @@ include 'terminal.php';</string>
 				<string>include '../workflows.php';
 $q = "{query}";
 include 'run.php';</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>1</integer>
 			</dict>
@@ -137,7 +161,7 @@ include 'run.php';</string>
 			<key>uid</key>
 			<string>F9751D11-A334-40F7-9220-69B32EA1E1C6</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -150,7 +174,7 @@ include 'run.php';</string>
 			<key>uid</key>
 			<string>FB5ABBB6-7029-4E2A-A3AA-85EA015748EB</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -159,11 +183,7 @@ include 'run.php';</string>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
 				<true/>
-				<key>output</key>
-				<integer>0</integer>
 				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
 				<false/>
 				<key>text</key>
 				<string>{query}</string>
@@ -175,7 +195,7 @@ include 'run.php';</string>
 			<key>uid</key>
 			<string>B6D4800E-213B-4D13-B7E7-268387623B10</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -184,28 +204,38 @@ include 'run.php';</string>
 	<dict>
 		<key>0CB1DAC5-977B-4585-ACBC-265FDF0C223A</key>
 		<dict>
+			<key>xpos</key>
+			<integer>170</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 		<key>2204E95F-F818-48D9-A420-E2F2B1EFA147</key>
 		<dict>
+			<key>xpos</key>
+			<integer>370</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 		<key>B6D4800E-213B-4D13-B7E7-268387623B10</key>
 		<dict>
+			<key>xpos</key>
+			<integer>570</integer>
 			<key>ypos</key>
-			<real>130</real>
+			<integer>120</integer>
 		</dict>
 		<key>F9751D11-A334-40F7-9220-69B32EA1E1C6</key>
 		<dict>
+			<key>xpos</key>
+			<integer>370</integer>
 			<key>ypos</key>
-			<real>130</real>
+			<integer>120</integer>
 		</dict>
 		<key>FB5ABBB6-7029-4E2A-A3AA-85EA015748EB</key>
 		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>130</real>
+			<integer>120</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

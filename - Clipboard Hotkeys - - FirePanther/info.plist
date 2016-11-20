@@ -15,17 +15,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-			</dict>
-		</array>
-		<key>1482F2F0-D433-4C50-9874-B1F1316F2426</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>4774865D-AA0F-4213-8346-B01393492D7F</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>22138D2D-7AC9-42A3-84C5-AE3571E5C2DA</key>
@@ -37,6 +28,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>26281A78-7583-4486-A2D1-7DBE300CB9A1</key>
@@ -48,6 +41,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>2ACC42CD-FBC0-40FA-B78A-8C4BA5537FA0</key>
@@ -59,17 +54,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-			</dict>
-		</array>
-		<key>390198CE-82FB-4180-9A16-E4588B0D7B80</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1482F2F0-D433-4C50-9874-B1F1316F2426</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>3A955A02-9F75-4F44-944F-CA0E4525DD23</key>
@@ -81,6 +67,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>3B2DC03A-0DD6-4676-913D-0C3BC2C4D16C</key>
@@ -92,6 +80,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>41A1D7AF-3F87-46A0-BA54-6D5CB5635BDB</key>
@@ -103,6 +93,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>4B79F6B3-BC8A-43D4-B5BC-DFD89A4DA461</key>
@@ -114,6 +106,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>59377591-FFA6-4278-92C8-9770FFF041E8</key>
@@ -125,6 +119,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>5A20799F-7ACE-4E4C-86BE-753F41A4E17F</key>
@@ -136,6 +132,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>63B2246F-82FD-4C49-86BC-EC1710DBB4A2</key>
@@ -147,6 +145,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>69EC1907-E9A0-41C5-AC92-64D204553F3D</key>
@@ -158,6 +158,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>7CFA0D1B-BEA1-4C23-8E2E-2BC522B9FC80</key>
@@ -169,6 +171,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>7D55C218-3307-42D9-BE99-B56F380F960B</key>
@@ -180,6 +184,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>820507C7-C2D8-4303-9DA3-B866AF9A7D03</key>
@@ -191,6 +197,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>834744F2-B3CC-4573-8D7C-AB04EB798BC3</key>
@@ -202,6 +210,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>86F1D357-B974-4E6E-A9CF-780CC880D0E0</key>
@@ -213,17 +223,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-			</dict>
-		</array>
-		<key>A818717D-7244-40E5-84DD-B19B44B07D47</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1482F2F0-D433-4C50-9874-B1F1316F2426</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>EAA62D75-5AA1-4B45-B1FE-F64B7E9F6B3E</key>
@@ -235,6 +236,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -254,98 +257,17 @@
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>1</string>
-				<key>hotkey</key>
-				<integer>9</integer>
-				<key>hotmod</key>
-				<integer>1572864</integer>
-				<key>hotstring</key>
-				<string>V</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>390198CE-82FB-4180-9A16-E4588B0D7B80</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>$skip = {query};
-$sql = new SQLite3($_SERVER["HOME"]."/Library/Application Support/Alfred 2/Databases/clipboard.alfdb");
-$stmt = $sql-&gt;prepare("SELECT item FROM clipboard ORDER BY ts DESC LIMIT {query}, 1;");
-$result = $stmt-&gt;execute();
-list($msg) = $result-&gt;fetchArray();
-$msg = str_replace('\\', '\\\\', $msg);
-$msg = str_replace('"', '\\"', $msg);
-$msg = str_replace("'", "'\\''", $msg);
-echo $msg;</string>
-				<key>type</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>1482F2F0-D433-4C50-9874-B1F1316F2426</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>2</string>
-				<key>hotkey</key>
-				<integer>9</integer>
-				<key>hotmod</key>
-				<integer>1835008</integer>
-				<key>hotstring</key>
-				<string>V</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>A818717D-7244-40E5-84DD-B19B44B07D47</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
 				<integer>1</integer>
 				<key>argumenttext</key>
 				<string>1</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>122</integer>
 				<key>hotmod</key>
-				<integer>8388608</integer>
+				<integer>10223616</integer>
 				<key>hotstring</key>
 				<string>F1</string>
 				<key>leftcursor</key>
@@ -360,35 +282,7 @@ echo $msg;</string>
 			<key>uid</key>
 			<string>7D55C218-3307-42D9-BE99-B56F380F960B</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>100</integer>
-				<key>script</key>
-				<string>$nr = substr("{query}", 0, 1);
-$cb = substr("{query}", 1);
-if (!empty($cb)) {
-	// copy
-	$file = $_SERVER["HOME"]."/Dropbox/Configs/AlfredApp/clipboard-cache/".$nr;
-	file_put_contents($file, $cb);
-	echo $cb;
-	exec('afplay /System/Library/Sounds/Bottle.aiff &gt; /dev/null 2&gt;&amp;1 &amp;');
-	exec('ssh root@firephone "pbcopy \$(echo \"'.base64_encode($cb).'\" | base64 -d) &amp;&amp; play /firephone/sounds/Bottle.aiff"');
-}</string>
-				<key>type</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5A20799F-7ACE-4E4C-86BE-753F41A4E17F</string>
-			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -399,10 +293,14 @@ if (!empty($cb)) {
 				<integer>1</integer>
 				<key>argumenttext</key>
 				<string>2</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>120</integer>
 				<key>hotmod</key>
-				<integer>8388608</integer>
+				<integer>10223616</integer>
 				<key>hotstring</key>
 				<string>F2</string>
 				<key>leftcursor</key>
@@ -417,7 +315,7 @@ if (!empty($cb)) {
 			<key>uid</key>
 			<string>834744F2-B3CC-4573-8D7C-AB04EB798BC3</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -428,10 +326,14 @@ if (!empty($cb)) {
 				<integer>1</integer>
 				<key>argumenttext</key>
 				<string>3</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>99</integer>
 				<key>hotmod</key>
-				<integer>8388608</integer>
+				<integer>10223616</integer>
 				<key>hotstring</key>
 				<string>F3</string>
 				<key>leftcursor</key>
@@ -446,7 +348,7 @@ if (!empty($cb)) {
 			<key>uid</key>
 			<string>3A955A02-9F75-4F44-944F-CA0E4525DD23</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -457,10 +359,14 @@ if (!empty($cb)) {
 				<integer>1</integer>
 				<key>argumenttext</key>
 				<string>4</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>118</integer>
 				<key>hotmod</key>
-				<integer>8388608</integer>
+				<integer>10223616</integer>
 				<key>hotstring</key>
 				<string>F4</string>
 				<key>leftcursor</key>
@@ -475,7 +381,7 @@ if (!empty($cb)) {
 			<key>uid</key>
 			<string>4B79F6B3-BC8A-43D4-B5BC-DFD89A4DA461</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -483,19 +389,58 @@ if (!empty($cb)) {
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>102</integer>
 				<key>script</key>
 				<string>set the clipboard to "{query}"
-tell application "System Events" to keystroke "v" using {command down}</string>
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.script</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>4774865D-AA0F-4213-8346-B01393492D7F</string>
+			<string>5A345AE8-FADF-4C41-B93E-85400B459FD5</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>100</integer>
+				<key>script</key>
+				<string>$location = $_SERVER["HOME"]."/Dropbox/Configs/AlfredApp/clipboard-cache/";
+
+$nr = substr("{query}", 0, 1);
+$cb = substr("{query}", 1);
+if (!empty($cb)) {
+	// copy
+	file_put_contents($location.$nr, $cb);
+	echo $cb;
+	exec('afplay /System/Library/Sounds/Bottle.aiff &gt; /dev/null 2&gt;&amp;1 &amp;');
+
+	// send the clipboard to your iDevice (only for jailbroken devices)
+	exec('ssh root@firephone "pbcopy \$(echo \"'.base64_encode($cb).'\" | base64 -d) &amp;&amp; play /firephone/sounds/Bottle.aiff"');
+}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5A20799F-7ACE-4E4C-86BE-753F41A4E17F</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -516,7 +461,7 @@ tell application "System Events" to keystroke "v" using {command down}</string>
 			<key>uid</key>
 			<string>41A1D7AF-3F87-46A0-BA54-6D5CB5635BDB</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -537,27 +482,7 @@ tell application "System Events" to keystroke "v" using {command down}</string>
 			<key>uid</key>
 			<string>86F1D357-B974-4E6E-A9CF-780CC880D0E0</string>
 			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>set the clipboard to "{query}"
-</string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.script</string>
-			<key>uid</key>
-			<string>5A345AE8-FADF-4C41-B93E-85400B459FD5</string>
-			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -578,7 +503,7 @@ tell application "System Events" to keystroke "v" using {command down}</string>
 			<key>uid</key>
 			<string>63B2246F-82FD-4C49-86BC-EC1710DBB4A2</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -599,7 +524,7 @@ tell application "System Events" to keystroke "v" using {command down}</string>
 			<key>uid</key>
 			<string>26281A78-7583-4486-A2D1-7DBE300CB9A1</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -610,6 +535,10 @@ tell application "System Events" to keystroke "v" using {command down}</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>1</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>122</integer>
 				<key>hotmod</key>
@@ -628,35 +557,7 @@ tell application "System Events" to keystroke "v" using {command down}</string>
 			<key>uid</key>
 			<string>3B2DC03A-0DD6-4676-913D-0C3BC2C4D16C</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>$nr = "{query}";
-// paste
-$file = $_SERVER["HOME"]."/Dropbox/Configs/AlfredApp/clipboard-cache/".$nr;
-if (file_exists($file)) {
-	$cb = file_get_contents($file);
-	//$cb = str_replace('\\', '\\\\', $cb);
-	$cb = str_replace('"', '\\"', $cb);
-	$cb = str_replace("'", "'\\''", $cb);
-	echo $cb;
-}</string>
-				<key>type</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>7CFA0D1B-BEA1-4C23-8E2E-2BC522B9FC80</string>
-			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -667,6 +568,10 @@ if (file_exists($file)) {
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>2</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>120</integer>
 				<key>hotmod</key>
@@ -685,7 +590,7 @@ if (file_exists($file)) {
 			<key>uid</key>
 			<string>820507C7-C2D8-4303-9DA3-B866AF9A7D03</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -696,6 +601,10 @@ if (file_exists($file)) {
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>3</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>99</integer>
 				<key>hotmod</key>
@@ -714,7 +623,7 @@ if (file_exists($file)) {
 			<key>uid</key>
 			<string>EAA62D75-5AA1-4B45-B1FE-F64B7E9F6B3E</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -725,6 +634,10 @@ if (file_exists($file)) {
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>4</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>118</integer>
 				<key>hotmod</key>
@@ -743,7 +656,65 @@ if (file_exists($file)) {
 			<key>uid</key>
 			<string>22138D2D-7AC9-42A3-84C5-AE3571E5C2DA</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>set the clipboard to "{query}"
+tell application "System Events" to keystroke "v" using {command down}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4774865D-AA0F-4213-8346-B01393492D7F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>$location = $_SERVER["HOME"]."/Dropbox/Configs/AlfredApp/clipboard-cache/";
+
+$nr = "{query}";
+// paste
+$file = $location.$nr;
+if (file_exists($file)) {
+	$cb = file_get_contents($file);
+	//$cb = str_replace('\\', '\\\\', $cb);
+	$cb = str_replace('"', '\\"', $cb);
+	$cb = str_replace("'", "'\\''", $cb);
+	echo $cb;
+}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7CFA0D1B-BEA1-4C23-8E2E-2BC522B9FC80</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -764,7 +735,7 @@ if (file_exists($file)) {
 			<key>uid</key>
 			<string>69EC1907-E9A0-41C5-AC92-64D204553F3D</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -785,7 +756,7 @@ if (file_exists($file)) {
 			<key>uid</key>
 			<string>03E6ABB0-EFA6-443C-98C7-DDDD40542B72</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -806,7 +777,7 @@ if (file_exists($file)) {
 			<key>uid</key>
 			<string>2ACC42CD-FBC0-40FA-B78A-8C4BA5537FA0</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -827,7 +798,7 @@ if (file_exists($file)) {
 			<key>uid</key>
 			<string>59377591-FFA6-4278-92C8-9770FFF041E8</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -836,118 +807,175 @@ if (file_exists($file)) {
 	<dict>
 		<key>03E6ABB0-EFA6-443C-98C7-DDDD40542B72</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>1010</real>
-		</dict>
-		<key>1482F2F0-D433-4C50-9874-B1F1316F2426</key>
-		<dict>
-			<key>ypos</key>
-			<real>70</real>
+			<integer>770</integer>
 		</dict>
 		<key>22138D2D-7AC9-42A3-84C5-AE3571E5C2DA</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>850</real>
+			<integer>610</integer>
 		</dict>
 		<key>26281A78-7583-4486-A2D1-7DBE300CB9A1</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>600</real>
+			<integer>360</integer>
 		</dict>
 		<key>2ACC42CD-FBC0-40FA-B78A-8C4BA5537FA0</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>1050</real>
-		</dict>
-		<key>390198CE-82FB-4180-9A16-E4588B0D7B80</key>
-		<dict>
-			<key>ypos</key>
-			<real>20</real>
+			<integer>810</integer>
 		</dict>
 		<key>3A955A02-9F75-4F44-944F-CA0E4525DD23</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>330</real>
+			<integer>90</integer>
 		</dict>
 		<key>3B2DC03A-0DD6-4676-913D-0C3BC2C4D16C</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>730</real>
+			<integer>490</integer>
 		</dict>
 		<key>41A1D7AF-3F87-46A0-BA54-6D5CB5635BDB</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>480</real>
+			<integer>240</integer>
 		</dict>
 		<key>4774865D-AA0F-4213-8346-B01393492D7F</key>
 		<dict>
+			<key>xpos</key>
+			<integer>420</integer>
 			<key>ypos</key>
-			<real>420</real>
+			<integer>660</integer>
 		</dict>
 		<key>4B79F6B3-BC8A-43D4-B5BC-DFD89A4DA461</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>370</real>
+			<integer>130</integer>
 		</dict>
 		<key>59377591-FFA6-4278-92C8-9770FFF041E8</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>1090</real>
+			<integer>850</integer>
 		</dict>
 		<key>5A20799F-7ACE-4E4C-86BE-753F41A4E17F</key>
 		<dict>
+			<key>xpos</key>
+			<integer>260</integer>
 			<key>ypos</key>
-			<real>250</real>
+			<integer>180</integer>
 		</dict>
 		<key>5A345AE8-FADF-4C41-B93E-85400B459FD5</key>
 		<dict>
+			<key>xpos</key>
+			<integer>410</integer>
 			<key>ypos</key>
-			<real>530</real>
+			<integer>180</integer>
 		</dict>
 		<key>63B2246F-82FD-4C49-86BC-EC1710DBB4A2</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>560</real>
+			<integer>320</integer>
 		</dict>
 		<key>69EC1907-E9A0-41C5-AC92-64D204553F3D</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>970</real>
+			<integer>730</integer>
 		</dict>
 		<key>7CFA0D1B-BEA1-4C23-8E2E-2BC522B9FC80</key>
 		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
 			<key>ypos</key>
-			<real>730</real>
+			<integer>660</integer>
 		</dict>
 		<key>7D55C218-3307-42D9-BE99-B56F380F960B</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>250</real>
+			<integer>10</integer>
 		</dict>
 		<key>820507C7-C2D8-4303-9DA3-B866AF9A7D03</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>770</real>
+			<integer>530</integer>
 		</dict>
 		<key>834744F2-B3CC-4573-8D7C-AB04EB798BC3</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>290</real>
+			<integer>50</integer>
 		</dict>
 		<key>86F1D357-B974-4E6E-A9CF-780CC880D0E0</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>520</real>
-		</dict>
-		<key>A818717D-7244-40E5-84DD-B19B44B07D47</key>
-		<dict>
-			<key>ypos</key>
-			<real>120</real>
+			<integer>280</integer>
 		</dict>
 		<key>EAA62D75-5AA1-4B45-B1FE-F64B7E9F6B3E</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>810</real>
+			<integer>570</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

@@ -17,6 +17,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>DAA3CABB-8F52-4031-A1BF-880A2F37F324</key>
@@ -28,6 +30,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>FA704997-C876-409A-9444-2E6ACDA9AE85</key>
@@ -39,6 +43,8 @@
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
 				<string>PHP Dokumentation aktualisieren</string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -47,6 +53,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -61,16 +69,23 @@
 	<key>objects</key>
 	<array>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>largetypetext</key>
+				<string>{query}</string>
+			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.largetype</string>
 			<key>uid</key>
 			<string>7C82C0DC-C5F6-4306-912C-595FD61A09F4</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -85,6 +100,8 @@
 				<integer>0</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
 				<key>script</key>
 				<string>$errorlog = false;
 require '../workflows.php';
@@ -105,6 +122,12 @@ if (is_array($c)) {
 	add($c, $c, ($multiline ? "Mehrzeilig - " : "").$q_backup, 'php.png');
 }
 show();</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
 				<key>title</key>
 				<string>PHP Tester</string>
 				<key>type</key>
@@ -117,32 +140,34 @@ show();</string>
 			<key>uid</key>
 			<string>9FC5CC7C-8D96-4DC0-8B27-2BBCB75EF709</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>include '../workflows.php';
-$q = "{query}";
-include 'update.php';</string>
-				<key>type</key>
-				<integer>1</integer>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>{query}</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>DAA3CABB-8F52-4031-A1BF-880A2F37F324</string>
+			<string>7E9F45F3-8D7F-472C-ACA0-348C509938A9</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -163,6 +188,12 @@ include 'update.php';</string>
 				<string>require '../workflows.php';
 $q = "{query}";
 include 'main.php';</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
 				<key>title</key>
 				<string>PHP Manual</string>
 				<key>type</key>
@@ -175,36 +206,40 @@ include 'main.php';</string>
 			<key>uid</key>
 			<string>FA704997-C876-409A-9444-2E6ACDA9AE85</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>concurrently</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>output</key>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>include '../workflows.php';
+$q = "{query}";
+include 'update.php';</string>
+				<key>scriptargtype</key>
 				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>title</key>
-				<string>{query}</string>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>7E9F45F3-8D7F-472C-ACA0-348C509938A9</string>
+			<string>DAA3CABB-8F52-4031-A1BF-880A2F37F324</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>plusspaces</key>
-				<false/>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
 				<key>url</key>
 				<string>http://php.net/manual/en/{query}</string>
 				<key>utf8</key>
@@ -215,7 +250,7 @@ include 'main.php';</string>
 			<key>uid</key>
 			<string>218801FB-D5AF-48AA-8AD0-89C610D0BD35</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -224,33 +259,45 @@ include 'main.php';</string>
 	<dict>
 		<key>218801FB-D5AF-48AA-8AD0-89C610D0BD35</key>
 		<dict>
+			<key>xpos</key>
+			<integer>190</integer>
 			<key>ypos</key>
-			<real>280</real>
+			<integer>230</integer>
 		</dict>
 		<key>7C82C0DC-C5F6-4306-912C-595FD61A09F4</key>
 		<dict>
+			<key>xpos</key>
+			<integer>190</integer>
 			<key>ypos</key>
-			<real>20</real>
+			<integer>10</integer>
 		</dict>
 		<key>7E9F45F3-8D7F-472C-ACA0-348C509938A9</key>
 		<dict>
+			<key>xpos</key>
+			<integer>340</integer>
 			<key>ypos</key>
-			<real>160</real>
+			<integer>120</integer>
 		</dict>
 		<key>9FC5CC7C-8D96-4DC0-8B27-2BBCB75EF709</key>
 		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>20</real>
+			<integer>10</integer>
 		</dict>
 		<key>DAA3CABB-8F52-4031-A1BF-880A2F37F324</key>
 		<dict>
+			<key>xpos</key>
+			<integer>190</integer>
 			<key>ypos</key>
-			<real>160</real>
+			<integer>120</integer>
 		</dict>
 		<key>FA704997-C876-409A-9444-2E6ACDA9AE85</key>
 		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>160</real>
+			<integer>120</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

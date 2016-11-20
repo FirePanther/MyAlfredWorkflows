@@ -17,6 +17,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -25,6 +27,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -45,27 +49,49 @@
 				<false/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>5D03F574-127C-4E9B-963A-89F5C21F8B0D</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>4</integer>
 				<key>keyword</key>
 				<string>ts</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
 				<key>script</key>
 				<string>include '../workflows.php';
 $q = trim("{query}");
 include 'main.php';</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
 				<key>type</key>
 				<integer>1</integer>
 				<key>withspace</key>
@@ -76,7 +102,7 @@ include 'main.php';</string>
 			<key>uid</key>
 			<string>09F595D0-428C-4910-BACF-5582963EE7F3</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -85,11 +111,7 @@ include 'main.php';</string>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
 				<false/>
-				<key>output</key>
-				<integer>0</integer>
 				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
 				<false/>
 				<key>text</key>
 				<string>{query}</string>
@@ -101,7 +123,7 @@ include 'main.php';</string>
 			<key>uid</key>
 			<string>0363F359-3E68-4523-BAEE-6984DF1C67FD</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -110,18 +132,24 @@ include 'main.php';</string>
 	<dict>
 		<key>0363F359-3E68-4523-BAEE-6984DF1C67FD</key>
 		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
 			<key>ypos</key>
-			<real>130</real>
+			<integer>130</integer>
 		</dict>
 		<key>09F595D0-428C-4910-BACF-5582963EE7F3</key>
 		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 		<key>5D03F574-127C-4E9B-963A-89F5C21F8B0D</key>
 		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

@@ -19,18 +19,34 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>keyword</key>
 				<string>ip</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Bitte warten...</string>
 				<key>script</key>
 				<string>include '../workflows.php';
 $q = "{query}";
 include 'main.php';</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
 				<key>title</key>
 				<string>IP-Adresse eingeben</string>
 				<key>type</key>
@@ -43,7 +59,7 @@ include 'main.php';</string>
 			<key>uid</key>
 			<string>8B78E003-2B42-439F-8594-B85817F67808</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -52,8 +68,10 @@ include 'main.php';</string>
 	<dict>
 		<key>8B78E003-2B42-439F-8594-B85817F67808</key>
 		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

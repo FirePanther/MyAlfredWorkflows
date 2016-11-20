@@ -15,6 +15,8 @@
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
 				<string>Datei im Finder anzeigen</string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -23,6 +25,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -42,21 +46,39 @@
 			<key>uid</key>
 			<string>E4A9006E-E1B9-4432-A656-CB2C6ACBA2CF</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>100</integer>
 				<key>keyword</key>
 				<string>cpu</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
 				<key>script</key>
 				<string>include '../workflows.php';
 $q = "{query}";
 include 'main.php';</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
 				<key>title</key>
 				<string>CPU</string>
 				<key>type</key>
@@ -69,17 +91,22 @@ include 'main.php';</string>
 			<key>uid</key>
 			<string>04F81099-5C9A-44A2-8625-4FE5CCAE4442</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
-			<dict/>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
 			<string>0E95E09D-DEC1-4A25-BC47-56E44C3F6539</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -88,18 +115,24 @@ include 'main.php';</string>
 	<dict>
 		<key>04F81099-5C9A-44A2-8625-4FE5CCAE4442</key>
 		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 		<key>0E95E09D-DEC1-4A25-BC47-56E44C3F6539</key>
 		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
 			<key>ypos</key>
-			<real>130</real>
+			<integer>130</integer>
 		</dict>
 		<key>E4A9006E-E1B9-4432-A656-CB2C6ACBA2CF</key>
 		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

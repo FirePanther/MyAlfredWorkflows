@@ -17,6 +17,8 @@
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
 				<string>jQuery Dokumentation aktualisieren</string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -25,6 +27,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>4B9CF75D-2EC3-450D-B12D-DEAE006DE816</key>
@@ -36,6 +40,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -52,12 +58,18 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
 				<string>include '../workflows.php';
 $q = "{query}";
 include 'update.php';</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>1</integer>
 			</dict>
@@ -66,7 +78,7 @@ include 'update.php';</string>
 			<key>uid</key>
 			<string>4B9CF75D-2EC3-450D-B12D-DEAE006DE816</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -75,12 +87,10 @@ include 'update.php';</string>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
 				<false/>
-				<key>output</key>
-				<integer>0</integer>
 				<key>removeextension</key>
 				<false/>
-				<key>sticky</key>
-				<false/>
+				<key>text</key>
+				<string></string>
 				<key>title</key>
 				<string>{query}</string>
 			</dict>
@@ -89,21 +99,41 @@ include 'update.php';</string>
 			<key>uid</key>
 			<string>F34D82C4-2B0F-44F1-8E4A-4F8BD897F820</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>100</integer>
 				<key>keyword</key>
 				<string>$</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
 				<key>script</key>
 				<string>include '../workflows.php';
 $q = "{query}";
 include 'main.php';</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
 				<key>type</key>
 				<integer>1</integer>
 				<key>withspace</key>
@@ -114,13 +144,15 @@ include 'main.php';</string>
 			<key>uid</key>
 			<string>08CB5813-F3E4-4992-B916-01077B6D2041</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>plusspaces</key>
-				<false/>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
 				<key>url</key>
 				<string>{query}</string>
 				<key>utf8</key>
@@ -131,7 +163,7 @@ include 'main.php';</string>
 			<key>uid</key>
 			<string>8352F43D-B19C-4B49-8934-F95870BD95F0</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -140,23 +172,31 @@ include 'main.php';</string>
 	<dict>
 		<key>08CB5813-F3E4-4992-B916-01077B6D2041</key>
 		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 		<key>4B9CF75D-2EC3-450D-B12D-DEAE006DE816</key>
 		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 		<key>8352F43D-B19C-4B49-8934-F95870BD95F0</key>
 		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
 			<key>ypos</key>
-			<real>130</real>
+			<integer>130</integer>
 		</dict>
 		<key>F34D82C4-2B0F-44F1-8E4A-4F8BD897F820</key>
 		<dict>
+			<key>xpos</key>
+			<integer>420</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

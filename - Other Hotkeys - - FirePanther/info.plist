@@ -15,6 +15,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>30B5B72C-4994-466E-BA41-7E0406010B26</key>
@@ -28,17 +30,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-			</dict>
-		</array>
-		<key>40D13EA3-B689-4E25-A27D-03011190A82D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>7DB5E1A2-0ADD-4F58-9ED4-F6630E2C07F0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>9929BD6C-1636-46F3-B916-58888377FAC6</key>
@@ -50,6 +43,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>B686C0CF-E007-427B-BCED-79CA12E0ACDB</key>
@@ -61,17 +56,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-			</dict>
-		</array>
-		<key>E405289F-06AB-4BCD-8A05-5BF7183C8FB0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>FEFDBA4A-D319-43DA-9A22-E5837A974249</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -96,6 +82,10 @@
 				<string>include '../workflows.php';
 $q = "{query}";
 include 'newFile.php';</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>1</integer>
 			</dict>
@@ -104,7 +94,7 @@ include 'newFile.php';</string>
 			<key>uid</key>
 			<string>30B5B72C-4994-466E-BA41-7E0406010B26</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -113,6 +103,10 @@ include 'newFile.php';</string>
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>45</integer>
 				<key>hotmod</key>
@@ -135,114 +129,7 @@ include 'newFile.php';</string>
 			<key>uid</key>
 			<string>180B7D93-E380-41AD-BB87-34D2808657C1</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>hotkey</key>
-				<integer>53</integer>
-				<key>hotmod</key>
-				<integer>1048576</integer>
-				<key>hotstring</key>
-				<string>⎋</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>E405289F-06AB-4BCD-8A05-5BF7183C8FB0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>command</key>
-				<integer>5</integer>
-				<key>confirm</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.systemcommand</string>
-			<key>uid</key>
-			<string>FEFDBA4A-D319-43DA-9A22-E5837A974249</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Launchpad.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>7DB5E1A2-0ADD-4F58-9ED4-F6630E2C07F0</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>hotkey</key>
-				<integer>96</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F5</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>40D13EA3-B689-4E25-A27D-03011190A82D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>100</integer>
-				<key>script</key>
-				<string>include '../workflows.php';
-$q = "{query}";
-include 'launch.php';</string>
-				<key>type</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F9C4CC51-5774-40C6-A140-38703EEE7F28</string>
-			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -253,6 +140,10 @@ include 'launch.php';</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>fPixelmator</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>35</integer>
 				<key>hotmod</key>
@@ -271,7 +162,32 @@ include 'launch.php';</string>
 			<key>uid</key>
 			<string>9929BD6C-1636-46F3-B916-58888377FAC6</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>100</integer>
+				<key>script</key>
+				<string>include '../workflows.php';
+$q = "{query}";
+include 'launch.php';</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F9C4CC51-5774-40C6-A140-38703EEE7F28</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -282,6 +198,10 @@ include 'launch.php';</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>dTerminal</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>17</integer>
 				<key>hotmod</key>
@@ -300,7 +220,7 @@ include 'launch.php';</string>
 			<key>uid</key>
 			<string>B686C0CF-E007-427B-BCED-79CA12E0ACDB</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -311,6 +231,10 @@ include 'launch.php';</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>fCodeRunner</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>50</integer>
 				<key>hotmod</key>
@@ -329,7 +253,7 @@ include 'launch.php';</string>
 			<key>uid</key>
 			<string>33B12E74-5C11-4499-A739-A01A2CE7D063</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -338,53 +262,45 @@ include 'launch.php';</string>
 	<dict>
 		<key>180B7D93-E380-41AD-BB87-34D2808657C1</key>
 		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 		<key>30B5B72C-4994-466E-BA41-7E0406010B26</key>
 		<dict>
+			<key>xpos</key>
+			<integer>180</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 		<key>33B12E74-5C11-4499-A739-A01A2CE7D063</key>
 		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>610</real>
-		</dict>
-		<key>40D13EA3-B689-4E25-A27D-03011190A82D</key>
-		<dict>
-			<key>ypos</key>
-			<real>250</real>
-		</dict>
-		<key>7DB5E1A2-0ADD-4F58-9ED4-F6630E2C07F0</key>
-		<dict>
-			<key>ypos</key>
-			<real>250</real>
+			<integer>360</integer>
 		</dict>
 		<key>9929BD6C-1636-46F3-B916-58888377FAC6</key>
 		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>370</real>
+			<integer>120</integer>
 		</dict>
 		<key>B686C0CF-E007-427B-BCED-79CA12E0ACDB</key>
 		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>490</real>
-		</dict>
-		<key>E405289F-06AB-4BCD-8A05-5BF7183C8FB0</key>
-		<dict>
-			<key>ypos</key>
-			<real>130</real>
+			<integer>240</integer>
 		</dict>
 		<key>F9C4CC51-5774-40C6-A140-38703EEE7F28</key>
 		<dict>
+			<key>xpos</key>
+			<integer>210</integer>
 			<key>ypos</key>
-			<real>370</real>
-		</dict>
-		<key>FEFDBA4A-D319-43DA-9A22-E5837A974249</key>
-		<dict>
-			<key>ypos</key>
-			<real>130</real>
+			<integer>240</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

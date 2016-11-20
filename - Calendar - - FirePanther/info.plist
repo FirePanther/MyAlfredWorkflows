@@ -15,6 +15,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -43,7 +45,7 @@ end alfred_script</string>
 			<key>uid</key>
 			<string>3AD6BFB1-5FFD-47B3-8022-7379F4AAA617</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -64,7 +66,7 @@ end alfred_script</string>
 			<key>uid</key>
 			<string>399DDA1E-B3CB-4649-834A-0556523BE26E</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -73,13 +75,17 @@ end alfred_script</string>
 	<dict>
 		<key>399DDA1E-B3CB-4649-834A-0556523BE26E</key>
 		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 		<key>3AD6BFB1-5FFD-47B3-8022-7379F4AAA617</key>
 		<dict>
+			<key>xpos</key>
+			<integer>160</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
