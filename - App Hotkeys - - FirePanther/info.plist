@@ -84,19 +84,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>641CC6D9-1991-4899-82C8-E84A65EDDF2B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>35731A80-48AF-4ADC-8EAA-7F8D077CB445</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>806157C7-1FF3-4234-BA1D-0D62C724989F</key>
 		<array>
 			<dict>
@@ -521,37 +508,6 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>18</integer>
-				<key>hotmod</key>
-				<integer>262144</integer>
-				<key>hotstring</key>
-				<string>1</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>641CC6D9-1991-4899-82C8-E84A65EDDF2B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>393216</integer>
@@ -570,23 +526,6 @@
 			<string>806157C7-1FF3-4234-BA1D-0D62C724989F</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Messages.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>35731A80-48AF-4ADC-8EAA-7F8D077CB445</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -742,20 +681,6 @@
 		<dict>
 			<key>xpos</key>
 			<integer>160</integer>
-			<key>ypos</key>
-			<integer>450</integer>
-		</dict>
-		<key>35731A80-48AF-4ADC-8EAA-7F8D077CB445</key>
-		<dict>
-			<key>xpos</key>
-			<integer>450</integer>
-			<key>ypos</key>
-			<integer>450</integer>
-		</dict>
-		<key>641CC6D9-1991-4899-82C8-E84A65EDDF2B</key>
-		<dict>
-			<key>xpos</key>
-			<integer>310</integer>
 			<key>ypos</key>
 			<integer>450</integer>
 		</dict>
