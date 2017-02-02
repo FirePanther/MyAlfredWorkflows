@@ -30,14 +30,36 @@ function add($return = '', $title = '', $text = '', $img = null, $cache = 1) {
 
 function show($cacheName = '') {
 	global $fp_items, $fp_cache_data;
+	$items = [];
+	foreach($fp_items as $item) {
+		$icon = [
+			'path' => $item[3],
+			//'type' => 'default'
+		];
+		if (substr($icon['path'], 0, 9) == 'fileicon:' || substr($icon['path'], 0, 9) == 'filetype:') {
+			list($type, $path) = explode(':', $icon['path'], 2);
+			$type = 'default';
+			//$icon['type'] = $type;
+			$icon['path'] = str_replace($_SERVER['HOME'].'/', '~/', $path);
+			$item[2] = $icon['path'];
+		}
+		$items[] = [
+			'arg' => $item[0],
+			'title' => $item[1],
+			'subtitle' => $item[2],
+			'icon' => $icon
+		];
+	}
+	/*
 	$echo = '<?xml version="1.0"?>
 <items>';
 	foreach($fp_items as $item) {
 		$echo .= _getItem($item[0], $item[1], $item[2], $item[3]);
 	}
 	$echo .= '</items>';
-	echo $echo;
-	_addCache($cacheName, $echo);
+	*/
+	echo json_encode(['items' => $items]);
+	//_addCache($cacheName, $echo);
 }
 
 function _getItem($arg, $title, $subtitle, $icon, $extended = array()) {
